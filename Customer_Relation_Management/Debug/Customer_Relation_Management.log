@@ -1,0 +1,6 @@
+﻿  Customer_Relation_Management.cpp
+C:\Users\divya\source\repos\Customer_Relation_Management\Customer_Relation_Management.cpp(49,5): error C2065: 'CRMSystemcrmSystem': undeclared identifier
+C:\Users\divya\source\repos\Customer_Relation_Management\Customer_Relation_Management.cpp(52,5): error C2065: 'crmSystem': undeclared identifier
+C:\Users\divya\source\repos\Customer_Relation_Management\Customer_Relation_Management.cpp(53,5): error C2065: 'crmSystem': undeclared identifier
+C:\Users\divya\source\repos\Customer_Relation_Management\Customer_Relation_Management.cpp(54,5): error C2065: 'crmSystem': undeclared identifier
+C:\Users\divya\source\repos\Customer_Relation_Management\Customer_Relation_Management.cpp(56,5): error C2065: 'crmSystem': undeclared identifier
