@@ -38,21 +38,38 @@ public:
             for (const auto& customer : customers) {
                 std::cout << "Name: " << customer.name << "\n";
                 std::cout << "Email: " << customer.email << "\n";
-                std::cout << "Phone: " << customer.phone << "\n\n";
-                std::cout << "address: " << customer.address << "\n\n";
+                std::cout << "Phone: " << customer.phone << "\n";
+                std::cout << "Address: " << customer.address << "\n\n";
             }
         }
     }
 };
 
 int main() {
-    CRMSystemcrmSystem;
+    CRMSystem crmSystem;
 
-    // Example usage of the CRM System
-    crmSystem.addCustomer("Divya", "divya123@gmail.com", "123-456-7890", "123 Main St,NewJersey,USA");
-    crmSystem.addCustomer("Ramya", "ramya345@gmail.com", "987-654-3210", "456 Elm St,NewJersey,USA");
-    crmSystem.addCustomer("Vijay", "vijay678@gmail.com", "555-123-4567", "789 Oak St, New Jersey,USA");
+    // Prompt user to add customers
+    std::string name, email, phone, address;
+    char addMore;
+    do {
+        std::cout << "Enter customer details:\n";
+        std::cout << "Name: ";
+        std::cin >> name;
+        std::cout << "Email: ";
+        std::cin >> email;
+        std::cout << "Phone: ";
+        std::cin >> phone;
+        std::cout << "Address: ";
+        std::cin.ignore(); // Ignore newline character
+        std::getline(std::cin, address);
 
+        crmSystem.addCustomer(name, email, phone, address);
+
+        std::cout << "Do you want to add another customer? (y/n): ";
+        std::cin >> addMore;
+    } while (addMore == 'y' || addMore == 'Y');
+
+    // Display all customers
     crmSystem.displayCustomers();
 
     return 0;
