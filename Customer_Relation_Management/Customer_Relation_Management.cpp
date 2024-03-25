@@ -3,6 +3,7 @@
 #include <string>
 
 // Customer structure
+//changes
 struct Customer {
     std::string name;
     std::string email;
